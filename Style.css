@@ -1,17 +1,27 @@
 body {
   margin: 0;
-  font-family: 'Brandon Grotesque', sans-serif;
+  font-family: 'Calluna', serif;
   background-color: #87ceeb; /* sky blue */
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 30px 30px;
   color: white;
   line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
   max-width: 900px;
-  margin: 0 auto;
+  width: 100%;
   padding: 2rem;
-  margin-left: 1in;
-  margin-right: 1in;
+  margin: 2rem 1in;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
 }
 
 .title {
@@ -144,8 +154,8 @@ strong {
 @media (max-width: 768px) {
       .container {
       padding: 1rem;
-      margin-left: 0.5in;
-      margin-right: 0.5in;
+      margin: 1rem 0.5in;
+      max-width: 95%;
     }
   
   .title {
