@@ -14,6 +14,7 @@ body {
   );
   background-size: 40px 40px;
   color: #000033; /* dark blue */
+  line-height: 1.6;
 }
 
 .container {
@@ -38,9 +39,10 @@ body {
 
 .info-block {
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 1rem;
+  padding: 1.5rem;
   margin-bottom: 2rem;
   border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .section {
@@ -49,4 +51,124 @@ body {
   margin-bottom: 2rem;
   border-radius: 8px;
   min-height: 150px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Section headings */
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000033;
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid #87ceeb;
+  padding-bottom: 0.5rem;
+}
+
+/* Section subtitles */
+.section-subtitle {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #666;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  margin-top: -0.5rem;
+}
+
+/* Subsection headings */
+h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000033;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+td {
+  padding: 0.8rem;
+  border-bottom: 1px solid #ddd;
+  vertical-align: top;
+}
+
+td:first-child {
+  font-weight: bold;
+  width: 30%;
+  color: #000033;
+}
+
+td:last-child {
+  width: 70%;
+}
+
+/* Lists */
+ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+
+/* Links */
+a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #003366;
+  text-decoration: underline;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* Strong text */
+strong {
+  font-weight: bold;
+  color: #000033;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+  
+  h3 {
+    font-size: 1.3rem;
+  }
+  
+  h4 {
+    font-size: 1.1rem;
+  }
+  
+  td:first-child {
+    width: 40%;
+  }
+  
+  td:last-child {
+    width: 60%;
+  }
 }
