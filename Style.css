@@ -2,18 +2,7 @@ body {
   margin: 0;
   font-family: 'Brandon Grotesque', sans-serif;
   background-color: #87ceeb; /* sky blue */
-  background-image: linear-gradient(
-    45deg,
-    rgba(255, 255, 255, 0.5) 25%,
-    transparent 25%,
-    transparent 50%,
-    rgba(255, 255, 255, 0.5) 50%,
-    rgba(255, 255, 255, 0.5) 75%,
-    transparent 75%,
-    transparent
-  );
-  background-size: 40px 40px;
-  color: #000033; /* dark blue */
+  color: white;
   line-height: 1.6;
 }
 
@@ -21,64 +10,72 @@ body {
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem;
+  margin-left: 1in;
+  margin-right: 1in;
 }
 
 .title {
   font-size: 2rem;
   font-weight: bold;
-  color: #000033;
+  color: white;
   margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 .subtitle {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #000033;
+  color: white;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .info-block {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.3);
   padding: 1.5rem;
   margin-bottom: 2rem;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: white;
 }
 
 .section {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.3);
   padding: 1.5rem;
   margin-bottom: 2rem;
   border-radius: 8px;
   min-height: 150px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: white;
 }
 
 /* Section headings */
 h3 {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #000033;
+  color: white;
   margin-bottom: 0.5rem;
-  border-bottom: 2px solid #87ceeb;
+  border-bottom: 2px solid white;
   padding-bottom: 0.5rem;
+  text-align: center;
 }
 
 /* Section subtitles */
 .section-subtitle {
   font-size: 1rem;
   font-weight: normal;
-  color: #666;
+  color: rgba(255, 255, 255, 0.8);
   font-style: italic;
   margin-bottom: 1.5rem;
   margin-top: -0.5rem;
+  text-align: center;
 }
 
 /* Subsection headings */
 h4 {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #000033;
+  color: white;
   margin-top: 1.5rem;
   margin-bottom: 0.8rem;
 }
@@ -92,14 +89,15 @@ table {
 
 td {
   padding: 0.8rem;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   vertical-align: top;
+  color: white;
 }
 
 td:first-child {
   font-weight: bold;
   width: 30%;
-  color: #000033;
+  color: white;
 }
 
 td:last-child {
@@ -119,14 +117,14 @@ li {
 
 /* Links */
 a {
-  color: #0066cc;
+  color: #e6f3ff;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s ease;
 }
 
 a:hover {
-  color: #003366;
+  color: white;
   text-decoration: underline;
 }
 
@@ -139,14 +137,16 @@ p {
 /* Strong text */
 strong {
   font-weight: bold;
-  color: #000033;
+  color: white;
 }
 
 /* Responsive design */
 @media (max-width: 768px) {
-  .container {
-    padding: 1rem;
-  }
+      .container {
+      padding: 1rem;
+      margin-left: 0.5in;
+      margin-right: 0.5in;
+    }
   
   .title {
     font-size: 1.5rem;

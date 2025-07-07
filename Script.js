@@ -104,14 +104,15 @@ function initializeInteractiveElements() {
             toggleButton.textContent = 'Show More';
             toggleButton.className = 'toggle-button';
             toggleButton.style.cssText = `
-                background: #87ceeb;
-                border: none;
+                background: rgba(255, 255, 255, 0.2);
+                border: 2px solid white;
                 padding: 0.5rem 1rem;
                 border-radius: 4px;
-                color: #000033;
+                color: white;
                 cursor: pointer;
                 margin: 0.5rem 0;
                 font-family: inherit;
+                transition: all 0.2s ease;
             `;
             
             const items = Array.from(list.children);
@@ -143,10 +144,13 @@ function initializeSearchFunctionality() {
         <input type="text" id="searchInput" placeholder="Search content..." style="
             width: 100%;
             padding: 0.8rem;
-            border: 2px solid #87ceeb;
+            border: 2px solid white;
             border-radius: 4px;
             font-family: inherit;
             margin-bottom: 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 1rem;
         ">
     `;
     
@@ -177,16 +181,17 @@ function initializePrintStyles() {
         position: fixed;
         top: 20px;
         right: 20px;
-        background: #87ceeb;
-        border: none;
+        background: rgba(255, 255, 255, 0.2);
+        border: 2px solid white;
         padding: 0.8rem 1.5rem;
         border-radius: 4px;
-        color: #000033;
+        color: white;
         cursor: pointer;
         font-family: inherit;
         font-weight: bold;
         z-index: 1000;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        transition: all 0.2s ease;
     `;
     
     printButton.addEventListener('click', function() {
@@ -222,7 +227,7 @@ function initializeAccessibilityFeatures() {
     const focusableElements = document.querySelectorAll('a, button, input');
     focusableElements.forEach(element => {
         element.addEventListener('focus', function() {
-            this.style.outline = '2px solid #87ceeb';
+            this.style.outline = '2px solid white';
             this.style.outlineOffset = '2px';
         });
         
@@ -235,11 +240,12 @@ function initializeAccessibilityFeatures() {
 // Add CSS for new elements
 const additionalStyles = `
     .table-of-contents {
-        background: rgba(255, 255, 255, 0.9);
+        background: rgba(0, 0, 0, 0.3);
         padding: 1rem;
         border-radius: 8px;
         margin-bottom: 2rem;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        color: white;
     }
     
     .table-of-contents ul {
@@ -252,7 +258,7 @@ const additionalStyles = `
     }
     
     .table-of-contents a {
-        color: #000033;
+        color: white;
         text-decoration: none;
         padding: 0.3rem 0;
         display: block;
@@ -262,12 +268,26 @@ const additionalStyles = `
     }
     
     .table-of-contents a:hover {
-        border-left-color: #87ceeb;
-        background: rgba(135, 206, 235, 0.1);
+        border-left-color: white;
+        background: rgba(255, 255, 255, 0.1);
     }
     
     .search-container {
         margin-bottom: 2rem;
+    }
+    
+    .toggle-button:hover {
+        background: rgba(255, 255, 255, 0.3) !important;
+        transform: translateY(-1px);
+    }
+    
+    .print-button:hover {
+        background: rgba(255, 255, 255, 0.3) !important;
+        transform: translateY(-1px);
+    }
+    
+    #searchInput::placeholder {
+        color: rgba(255, 255, 255, 0.7);
     }
     
     @media print {
@@ -277,12 +297,22 @@ const additionalStyles = `
         
         body {
             background: white !important;
+            color: black !important;
         }
         
         .section, .info-block {
             background: white !important;
+            color: black !important;
             box-shadow: none !important;
             break-inside: avoid;
+        }
+        
+        h3, h4, .title, .subtitle, strong {
+            color: black !important;
+        }
+        
+        a {
+            color: #0066cc !important;
         }
     }
 `;
