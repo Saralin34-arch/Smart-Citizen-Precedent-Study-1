@@ -104,15 +104,16 @@ function initializeInteractiveElements() {
             toggleButton.textContent = 'Show More';
             toggleButton.className = 'toggle-button';
             toggleButton.style.cssText = `
-                background: rgba(255, 255, 255, 0.2);
-                border: 2px solid white;
-                padding: 0.5rem 1rem;
+                background: rgba(139, 69, 19, 0.1);
+                border: 1px solid rgba(139, 69, 19, 0.2);
+                padding: 0.6rem 1.2rem;
                 border-radius: 4px;
-                color: white;
+                color: #8b4513;
                 cursor: pointer;
-                margin: 0.5rem 0;
+                margin: 0.8rem 0;
                 font-family: inherit;
                 transition: all 0.2s ease;
+                font-weight: 500;
             `;
             
             const items = Array.from(list.children);
@@ -143,14 +144,15 @@ function initializeSearchFunctionality() {
     searchContainer.innerHTML = `
         <input type="text" id="searchInput" placeholder="Search content..." style="
             width: 100%;
-            padding: 0.8rem;
-            border: 2px solid white;
+            padding: 1rem;
+            border: 1px solid rgba(139, 69, 19, 0.2);
             border-radius: 4px;
             font-family: inherit;
-            margin-bottom: 1rem;
-            background: rgba(255, 255, 255, 0.1);
-            color: white;
+            margin-bottom: 1.5rem;
+            background: rgba(255, 255, 255, 0.8);
+            color: #2c1810;
             font-size: 1rem;
+            box-shadow: 0 2px 4px rgba(139, 69, 19, 0.05);
         ">
     `;
     
@@ -181,16 +183,16 @@ function initializePrintStyles() {
         position: fixed;
         top: 20px;
         right: 20px;
-        background: rgba(255, 255, 255, 0.2);
-        border: 2px solid white;
+        background: rgba(255, 255, 255, 0.9);
+        border: 1px solid rgba(139, 69, 19, 0.2);
         padding: 0.8rem 1.5rem;
         border-radius: 4px;
-        color: white;
+        color: #8b4513;
         cursor: pointer;
         font-family: inherit;
-        font-weight: bold;
+        font-weight: 500;
         z-index: 1000;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        box-shadow: 0 2px 8px rgba(139, 69, 19, 0.15);
         transition: all 0.2s ease;
     `;
     
@@ -227,7 +229,7 @@ function initializeAccessibilityFeatures() {
     const focusableElements = document.querySelectorAll('a, button, input');
     focusableElements.forEach(element => {
         element.addEventListener('focus', function() {
-            this.style.outline = '2px solid white';
+            this.style.outline = '2px solid #8b4513';
             this.style.outlineOffset = '2px';
         });
         
@@ -240,12 +242,13 @@ function initializeAccessibilityFeatures() {
 // Add CSS for new elements
 const additionalStyles = `
     .table-of-contents {
-        background: rgba(0, 0, 0, 0.3);
-        padding: 1rem;
-        border-radius: 8px;
+        background: rgba(245, 241, 237, 0.9);
+        padding: 1.5rem;
+        border-radius: 6px;
         margin-bottom: 2rem;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        color: white;
+        box-shadow: 0 2px 8px rgba(139, 69, 19, 0.08);
+        color: #2c1810;
+        border: 1px solid rgba(139, 69, 19, 0.08);
     }
     
     .table-of-contents ul {
@@ -254,22 +257,24 @@ const additionalStyles = `
     }
     
     .table-of-contents li {
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.8rem;
     }
     
     .table-of-contents a {
-        color: white;
+        color: #8b4513;
         text-decoration: none;
-        padding: 0.3rem 0;
+        padding: 0.4rem 0;
         display: block;
-        border-left: 3px solid transparent;
-        padding-left: 0.5rem;
+        border-left: 2px solid transparent;
+        padding-left: 0.8rem;
         transition: all 0.2s ease;
+        font-weight: 500;
     }
     
     .table-of-contents a:hover {
-        border-left-color: white;
-        background: rgba(255, 255, 255, 0.1);
+        border-left-color: #8b4513;
+        background: rgba(139, 69, 19, 0.05);
+        color: #a0522d;
     }
     
     .search-container {
@@ -277,17 +282,25 @@ const additionalStyles = `
     }
     
     .toggle-button:hover {
-        background: rgba(255, 255, 255, 0.3) !important;
+        background: rgba(139, 69, 19, 0.15) !important;
         transform: translateY(-1px);
+        box-shadow: 0 2px 6px rgba(139, 69, 19, 0.1);
     }
     
     .print-button:hover {
-        background: rgba(255, 255, 255, 0.3) !important;
+        background: rgba(139, 69, 19, 0.1) !important;
         transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(139, 69, 19, 0.2);
     }
     
     #searchInput::placeholder {
-        color: rgba(255, 255, 255, 0.7);
+        color: rgba(139, 69, 19, 0.5);
+    }
+    
+    #searchInput:focus {
+        outline: none;
+        border-color: #8b4513;
+        box-shadow: 0 0 0 2px rgba(139, 69, 19, 0.1);
     }
     
     @media print {

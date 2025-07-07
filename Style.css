@@ -1,13 +1,13 @@
 body {
   margin: 0;
   font-family: 'Calluna', serif;
-  background-color: #87ceeb; /* sky blue */
+  background-color: #f5f1ed; /* warm cream */
   background-image: 
-    linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
-  background-size: 30px 30px;
-  color: white;
-  line-height: 1.6;
+    linear-gradient(rgba(139, 69, 19, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(139, 69, 19, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  color: #2c1810; /* warm dark brown */
+  line-height: 1.7;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -15,79 +15,173 @@ body {
 }
 
 .container {
-  max-width: 900px;
+  max-width: 800px;
   width: 100%;
-  padding: 2rem;
+  padding: 3rem;
   margin: 2rem 1in;
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
-  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(139, 69, 19, 0.1);
+  border: 1px solid rgba(139, 69, 19, 0.1);
 }
 
 .title {
-  font-size: 2rem;
-  font-weight: bold;
-  color: white;
-  margin-bottom: 0.5rem;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #8b4513; /* saddle brown */
+  margin-bottom: 0.8rem;
   text-align: center;
+  letter-spacing: 0.5px;
 }
 
 .subtitle {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: white;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #a0522d; /* sienna */
   margin-bottom: 2rem;
+  text-align: center;
+  font-style: italic;
+  letter-spacing: 0.3px;
+}
+
+/* Site Header */
+.site-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(139, 69, 19, 0.1);
+}
+
+/* Main Navigation */
+.main-nav {
+  margin-top: 2rem;
+}
+
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.main-nav li {
+  margin: 0;
+}
+
+.main-nav a {
+  color: #8b4513;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  font-size: 0.95rem;
+  letter-spacing: 0.2px;
+}
+
+  .main-nav a:hover {
+    color: #a0522d;
+    border-color: rgba(139, 69, 19, 0.2);
+    background: rgba(139, 69, 19, 0.05);
+  }
+
+/* Site Footer */
+.site-footer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(139, 69, 19, 0.1);
   text-align: center;
 }
 
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.footer-content p {
+  color: #a0522d;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-links a {
+  color: #8b4513;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #a0522d;
+}
+
 .info-block {
-  background-color: rgba(0, 0, 0, 0.3);
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  color: white;
+  background-color: rgba(245, 241, 237, 0.9);
+  padding: 2rem;
+  margin-bottom: 3rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(139, 69, 19, 0.08);
+  color: #2c1810;
+  border: 1px solid rgba(139, 69, 19, 0.08);
 }
 
 .section {
-  background-color: rgba(0, 0, 0, 0.3);
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-  border-radius: 8px;
+  background-color: rgba(245, 241, 237, 0.9);
+  padding: 2rem;
+  margin-bottom: 3rem;
+  border-radius: 6px;
   min-height: 150px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  color: white;
+  box-shadow: 0 2px 8px rgba(139, 69, 19, 0.08);
+  color: #2c1810;
+  border: 1px solid rgba(139, 69, 19, 0.08);
 }
 
 /* Section headings */
 h3 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: white;
-  margin-bottom: 0.5rem;
-  border-bottom: 2px solid white;
-  padding-bottom: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #8b4513;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(139, 69, 19, 0.2);
+  padding-bottom: 0.8rem;
   text-align: center;
+  letter-spacing: 0.3px;
 }
 
 /* Section subtitles */
 .section-subtitle {
   font-size: 1rem;
-  font-weight: normal;
-  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+  color: #a0522d;
   font-style: italic;
-  margin-bottom: 1.5rem;
-  margin-top: -0.5rem;
+  margin-bottom: 2rem;
+  margin-top: -0.3rem;
   text-align: center;
+  letter-spacing: 0.2px;
 }
 
 /* Subsection headings */
 h4 {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: white;
-  margin-top: 1.5rem;
-  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #8b4513;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.2px;
 }
 
 /* Tables */
@@ -98,16 +192,16 @@ table {
 }
 
 td {
-  padding: 0.8rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 1rem;
+  border-bottom: 1px solid rgba(139, 69, 19, 0.1);
   vertical-align: top;
-  color: white;
+  color: #2c1810;
 }
 
 td:first-child {
-  font-weight: bold;
+  font-weight: 500;
   width: 30%;
-  color: white;
+  color: #8b4513;
 }
 
 td:last-child {
@@ -127,15 +221,16 @@ li {
 
 /* Links */
 a {
-  color: #e6f3ff;
+  color: #a0522d;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.2s ease;
+  transition: all 0.2s ease;
+  border-bottom: 1px solid transparent;
 }
 
 a:hover {
-  color: white;
-  text-decoration: underline;
+  color: #8b4513;
+  border-bottom: 1px solid #8b4513;
 }
 
 /* Paragraphs */
@@ -146,18 +241,18 @@ p {
 
 /* Strong text */
 strong {
-  font-weight: bold;
-  color: white;
+  font-weight: 600;
+  color: #8b4513;
 }
 
 /* Responsive design */
 @media (max-width: 768px) {
-      .container {
-      padding: 1rem;
-      margin: 1rem 0.5in;
-      max-width: 95%;
-    }
-  
+  .container {
+    padding: 1rem;
+    margin: 1rem 0.5in;
+    max-width: 95%;
+  }
+
   .title {
     font-size: 1.5rem;
   }
@@ -180,5 +275,15 @@ strong {
   
   td:last-child {
     width: 60%;
+  }
+  
+  .main-nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .main-nav a {
+    display: block;
+    padding: 0.8rem 1rem;
   }
 }
