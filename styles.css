@@ -1,25 +1,16 @@
-/* Color Palette from User Reference */
-:root {
-  --earth: #95714F;
-  --moss: #BCB96C;
-  --sand: #C7AF94;
-  --almond: #EAD6D0;
-  --sage: #ACB987;
-}
-
 body {
   margin: 0;
   font-family: 'Inter', 'Arial', sans-serif;
-  background-color: var(--almond);
-  color: var(--earth);
+  background-color: #fff;
+  color: #222;
   font-size: 16px;
   line-height: 1.6;
   font-weight: 400;
 }
 
 .site-header {
-  background: var(--sand);
-  border-bottom: 1px solid var(--earth);
+  background: #fff;
+  border-bottom: 2.5px solid #d32f2f;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,27 +21,30 @@ body {
 }
 
 .logo {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.5rem;
-  color: var(--earth);
+  color: #222;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
 }
 
 .site-nav a {
   margin-left: 2.5rem;
   text-decoration: none;
-  color: var(--earth);
-  font-size: 0.9rem;
+  color: #222;
+  font-size: 0.95rem;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   font-weight: 500;
-  transition: color 0.3s ease;
+  transition: color 0.3s;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
 }
 
 .site-nav a:hover,
 .site-nav a.active {
-  color: var(--moss);
+  color: #d32f2f;
+  border-bottom: 2px solid #d32f2f;
 }
 
 #hero {
@@ -59,72 +53,73 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: linear-gradient(rgba(172, 185, 135, 0.5), rgba(188, 185, 108, 0.5)), url('https://i.imgur.com/AU9AfXX.jpg');
+  background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('https://i.imgur.com/AU9AfXX.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: var(--earth);
+  color: #222;
   padding: 2rem;
 }
 
 .hero-text h1 {
   font-size: 4rem;
-  font-weight: 700;
+  font-weight: 800;
   margin: 0;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--earth);
+  letter-spacing: 0.12em;
 }
 
 .hero-text p {
   font-size: 1.25rem;
   margin-top: 1.5rem;
-  color: var(--sage);
+  color: #444;
   font-weight: 300;
 }
 
 .hero-text button {
   margin-top: 2.5rem;
   padding: 1rem 2rem;
-  background: var(--moss);
-  color: var(--earth);
+  background: #d32f2f;
+  color: #fff;
   border: none;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   cursor: pointer;
   transition: background 0.3s, color 0.3s;
-  border-radius: 4px;
+  border-radius: 0;
 }
 
 .hero-text button:hover {
-  background: var(--sage);
-  color: var(--earth);
+  background: #222;
+  color: #fff;
 }
 
 .content-section {
   padding: 5rem 8vw;
-  background-color: var(--almond);
-  border-top: 1px solid var(--sand);
+  background-color: #fff;
+  border-top: 2.5px solid #d32f2f;
 }
 
 .content-section:nth-child(even) {
-  background-color: var(--sand);
+  background-color: #f7f7f7;
 }
 
 h2 {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-bottom: 2rem;
-  color: var(--earth);
+  color: #222;
+  border-left: 8px solid #d32f2f;
+  padding-left: 1rem;
 }
 
 .subtitle {
-  font-size: 0.875rem;
-  color: var(--sage);
+  font-size: 0.95rem;
+  color: #888;
   margin-top: -1rem;
   margin-bottom: 2rem;
   text-transform: uppercase;
@@ -143,20 +138,20 @@ ul li {
 }
 
 a {
-  color: var(--earth);
+  color: #d32f2f;
   text-decoration: underline;
-  transition: color 0.3s ease;
+  transition: color 0.3s;
 }
 
 a:hover {
-  color: var(--moss);
+  color: #222;
 }
 
 .concept-diagram {
   margin-top: 2rem;
   padding: 2rem;
-  background: var(--sand);
-  border: 1px solid var(--earth);
+  background: #f7f7f7;
+  border: 1.5px solid #d32f2f;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -178,7 +173,7 @@ a:hover {
 
 .concept-diagram .caption {
   font-size: 0.75rem;
-  color: var(--sage);
+  color: #888;
   margin-top: 0.5rem;
   text-align: center;
   font-weight: 400;
@@ -186,8 +181,8 @@ a:hover {
 }
 
 .site-footer {
-  background: var(--earth);
-  color: var(--almond);
+  background: #222;
+  color: #fff;
   text-align: center;
   padding: 2rem;
   font-size: 0.875rem;
