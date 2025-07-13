@@ -44,7 +44,7 @@ body {
 .site-nav a:hover,
 .site-nav a.active {
   color: #000;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #FFD700;
 }
 
 #hero {
@@ -79,8 +79,8 @@ body {
 .hero-text button {
   margin-top: 2.5rem;
   padding: 1rem 2rem;
-  background: #333;
-  color: #fff;
+  background: #FFD700;
+  color: #333;
   border: none;
   font-weight: 700;
   font-size: 1rem;
@@ -93,8 +93,8 @@ body {
 
 .hero-text button:hover {
   background: #fff;
-  color: #000;
-  border: 1.5px solid #000;
+  color: #333;
+  border: 1.5px solid #FFD700;
 }
 
 .content-section {
@@ -114,7 +114,7 @@ h2 {
   letter-spacing: 0.1em;
   margin-bottom: 2rem;
   color: #333;
-  border-left: 8px solid #333;
+  border-left: 8px solid #FFD700;
   padding-left: 1rem;
 }
 
@@ -139,13 +139,13 @@ ul li {
 }
 
 a {
-  color: #000;
+  color: #333;
   text-decoration: underline;
   transition: color 0.3s;
 }
 
 a:hover {
-  color: #666;
+  color: #FFD700;
 }
 
 .concept-diagram {
@@ -192,7 +192,7 @@ a:hover {
 
 .site-footer {
   background: #333;
-  color: #fff;
+  color: #ccc;
   text-align: center;
   padding: 2rem;
   font-size: 0.875rem;
