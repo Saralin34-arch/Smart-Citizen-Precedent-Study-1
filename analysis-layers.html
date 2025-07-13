@@ -9,7 +9,7 @@
 </head>
 <body>
   <header class="site-header">
-    <div class="logo">Smart Citizen</div>
+    <div class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">Smart Citizen</a></div>
     <nav class="site-nav">
       <a href="overview.html">overview</a>
       <a href="concept.html">concept</a>
@@ -20,43 +20,75 @@
     </nav>
   </header>
   <main>
-    <section id="analysis-layers" class="content-section">
-      <div style="text-align: center; margin-bottom: 2rem;">
+    <section id="analysis-layers" style="background: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://media.istockphoto.com/id/1282406505/photo/people-interaction-abstract-image.jpg?s=1024x1024&w=is&k=20&c=wXE6NtqvbMoOuWoK2aE3raSjM6BoSS6cy63TRkQ-eVw='); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; min-height: 100vh; padding: 5rem 8vw;">
+      <div style="text-align: center; margin-bottom: 3rem;">
         <a href="index.html"><button style="padding: 0.75rem 1.5rem; background: #333; color: #fff; border: none; font-weight: 500; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em; cursor: pointer; transition: background 0.3s, color 0.3s; border-radius: 0;">← back to home</button></a>
       </div>
-      <h2>Three Layers of Analysis</h2>
-      <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: space-between;">
-        <div style="flex: 1 1 250px; min-width: 220px; background: #f7f7f7; border-radius: 8px; padding: 2rem;">
-          <h3 style="color: #333; font-size: 1.2rem; text-transform: uppercase; margin-top: 0;">1. Sensing Layer</h3>
-          <p>
-            <strong>What it is:</strong> The foundation of the Smart Citizen ecosystem. This layer consists of open-source hardware devices (Smart Citizen Kits) equipped with sensors for air quality, noise, temperature, humidity, and more.<br>
-            <strong>How it works:</strong> These kits are deployed in homes, schools, and public spaces, enabling citizens to collect high-resolution, real-time environmental data.<br>
-            <strong>Why it matters:</strong> It democratizes data collection, making environmental monitoring accessible to everyone and fostering a sense of ownership and participation.
-          </p>
+      
+      <h2 style="text-align: center; margin-bottom: 1rem;">Three Layers of Analysis</h2>
+      <p style="text-align: center; color: #666; margin-bottom: 4rem; font-size: 1.1rem;">The Smart Citizen ecosystem operates through interconnected layers that transform environmental data into community action</p>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2.5rem; margin-bottom: 3rem;">
+        <div style="background: rgba(255,255,255,0.95); border-radius: 12px; padding: 2.5rem; box-shadow: 0 8px 32px rgba(0,0,0,0.1); border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(10px);">
+          <div style="text-align: center; margin-bottom: 1.5rem;">
+            <div style="width: 60px; height: 60px; background: #333; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; color: #fff; font-weight: 700; font-size: 1.5rem;">1</div>
+          </div>
+          <h3 style="color: #333; font-size: 1.3rem; text-transform: uppercase; margin-top: 0; text-align: center; letter-spacing: 0.1em;">Sensing Layer</h3>
+          <div style="background: #f8f8f8; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0;">
+            <p style="margin: 0; font-weight: 500; color: #333;">What it is:</p>
+            <p style="margin: 0.5rem 0 1rem 0;">The foundation of the Smart Citizen ecosystem. This layer consists of open-source hardware devices (Smart Citizen Kits) equipped with sensors for air quality, noise, temperature, humidity, and more.</p>
+            
+            <p style="margin: 0; font-weight: 500; color: #333;">How it works:</p>
+            <p style="margin: 0.5rem 0 1rem 0;">These kits are deployed in homes, schools, and public spaces, enabling citizens to collect high-resolution, real-time environmental data.</p>
+            
+            <p style="margin: 0; font-weight: 500; color: #333;">Why it matters:</p>
+            <p style="margin: 0.5rem 0 0 0;">It democratizes data collection, making environmental monitoring accessible to everyone and fostering a sense of ownership and participation.</p>
+          </div>
         </div>
-        <div style="flex: 1 1 250px; min-width: 220px; background: #fff; border-radius: 8px; padding: 2rem; border: 1.5px solid #bbb;">
-          <h3 style="color: #333; font-size: 1.2rem; text-transform: uppercase; margin-top: 0;">2. Data Platform Layer</h3>
-          <p>
-            <strong>What it is:</strong> The Smart Citizen online platform and API.<br>
-            <strong>How it works:</strong> Data from all kits is sent to a central platform, where it is aggregated, visualized, and made openly accessible. Users can explore interactive maps, download datasets, and use APIs for custom analysis.<br>
-            <strong>Why it matters:</strong> This layer ensures transparency, open access, and interoperability, allowing anyone to use the data for research, education, or advocacy.
-          </p>
+
+        <div style="background: rgba(255,255,255,0.95); border-radius: 12px; padding: 2.5rem; box-shadow: 0 8px 32px rgba(0,0,0,0.1); border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(10px);">
+          <div style="text-align: center; margin-bottom: 1.5rem;">
+            <div style="width: 60px; height: 60px; background: #333; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; color: #fff; font-weight: 700; font-size: 1.5rem;">2</div>
+          </div>
+          <h3 style="color: #333; font-size: 1.3rem; text-transform: uppercase; margin-top: 0; text-align: center; letter-spacing: 0.1em;">Data Platform Layer</h3>
+          <div style="background: #f8f8f8; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0;">
+            <p style="margin: 0; font-weight: 500; color: #333;">What it is:</p>
+            <p style="margin: 0.5rem 0 1rem 0;">The Smart Citizen online platform and API.</p>
+            
+            <p style="margin: 0; font-weight: 500; color: #333;">How it works:</p>
+            <p style="margin: 0.5rem 0 1rem 0;">Data from all kits is sent to a central platform, where it is aggregated, visualized, and made openly accessible. Users can explore interactive maps, download datasets, and use APIs for custom analysis.</p>
+            
+            <p style="margin: 0; font-weight: 500; color: #333;">Why it matters:</p>
+            <p style="margin: 0.5rem 0 0 0;">This layer ensures transparency, open access, and interoperability, allowing anyone to use the data for research, education, or advocacy.</p>
+          </div>
         </div>
-        <div style="flex: 1 1 250px; min-width: 220px; background: #f7f7f7; border-radius: 8px; padding: 2rem;">
-          <h3 style="color: #333; font-size: 1.2rem; text-transform: uppercase; margin-top: 0;">3. Community & Insights Layer</h3>
-          <p>
-            <strong>What it is:</strong> The collaborative and participatory aspect of Smart Citizen.<br>
-            <strong>How it works:</strong> Communities, researchers, and policymakers use the platform to launch projects, share findings, and co-create solutions. The platform supports workshops, hackathons, and citizen science campaigns.<br>
-            <strong>Why it matters:</strong> This layer transforms raw data into actionable knowledge, empowering communities to address local challenges and influence policy.
-          </p>
-          <div style="text-align:center; margin-top:1.5rem;">
-            <img src="https://media.istockphoto.com/id/1282406505/photo/people-interaction-abstract-image.jpg?s=1024x1024&w=is&k=20&c=wXE6NtqvbMoOuWoK2aE3raSjM6BoSS6cy63TRkQ-eVw=" alt="People interaction abstract image representing community data" style="max-width: 140px; width: 100%; height: auto; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.07);">
-            <div style="font-size:0.8rem; color:#666; margin-top:0.5rem;">Concept: Community data and collective participation <a href='https://www.istockphoto.com/photo/people-interaction-abstract-image-gm1282406505-?utm_medium=organic&utm_source=google&utm_campaign=iptcurl' target='_blank' style='color:#888;'>[img source]</a></div>
+
+        <div style="background: rgba(255,255,255,0.95); border-radius: 12px; padding: 2.5rem; box-shadow: 0 8px 32px rgba(0,0,0,0.1); border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(10px);">
+          <div style="text-align: center; margin-bottom: 1.5rem;">
+            <div style="width: 60px; height: 60px; background: #333; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; color: #fff; font-weight: 700; font-size: 1.5rem;">3</div>
+          </div>
+          <h3 style="color: #333; font-size: 1.3rem; text-transform: uppercase; margin-top: 0; text-align: center; letter-spacing: 0.1em;">Community & Insights Layer</h3>
+          <div style="background: #f8f8f8; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0;">
+            <p style="margin: 0; font-weight: 500; color: #333;">What it is:</p>
+            <p style="margin: 0.5rem 0 1rem 0;">The collaborative and participatory aspect of Smart Citizen.</p>
+            
+            <p style="margin: 0; font-weight: 500; color: #333;">How it works:</p>
+            <p style="margin: 0.5rem 0 1rem 0;">Communities, researchers, and policymakers use the platform to launch projects, share findings, and co-create solutions. The platform supports workshops, hackathons, and citizen science campaigns.</p>
+            
+            <p style="margin: 0; font-weight: 500; color: #333;">Why it matters:</p>
+            <p style="margin: 0.5rem 0 0 0;">This layer transforms raw data into actionable knowledge, empowering communities to address local challenges and influence policy.</p>
           </div>
         </div>
       </div>
-      <div class="caption" style="margin-top:2rem; color:#888; text-align:center; font-size:0.85rem;">
-        Inspired by the Smart Citizen platform’s open, participatory approach to environmental monitoring and urban innovation. <a href="https://smartcitizen.me" target="_blank" style="color:#333;">Learn more</a>
+
+      <div style="text-align: center; background: rgba(255,255,255,0.9); padding: 2rem; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
+        <p style="margin: 0; color: #666; font-size: 0.95rem; line-height: 1.6;">
+          <strong>Inspired by the Smart Citizen platform's open, participatory approach to environmental monitoring and urban innovation.</strong><br>
+          <a href="https://smartcitizen.me" target="_blank" style="color: #333; text-decoration: underline; margin-top: 0.5rem; display: inline-block;">Learn more about Smart Citizen</a>
+        </p>
+        <p style="margin: 0.5rem 0 0 0; font-size: 0.8rem; color: #888;">
+          Background image: Community data and collective participation concept
+        </p>
       </div>
     </section>
   </main>
