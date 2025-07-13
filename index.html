@@ -11,20 +11,21 @@
   <header class="site-header">
     <div class="logo">Smart Citizen</div>
     <nav class="site-nav">
-      <a href="#overview">overview</a>
-      <a href="#features">concept</a>
-      <a href="#tech">technology</a>
-      <a href="#references">resources</a>
-      <a href="#bibliography-authors">author bib</a>
-      <a href="#bibliography-external">external bib</a>
+      <a href="overview.html">overview</a>
+      <a href="concept.html">concept</a>
+      <a href="technology.html">technology</a>
+      <a href="analysis-layers.html">3 layers of analysis</a>
+      <a href="references.html">resources</a>
+      <a href="bibliography-authors.html">author bib</a>
+      <a href="bibliography-external.html">external bib</a>
     </nav>
   </header>
 
-  <section id="hero">
+  <section id="hero" style="background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('https://i.imgur.com/AU9AfXX.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
     <div class="hero-text">
       <h1>Smart Citizen</h1>
       <p>open-source tools for collective environmental action</p>
-      <button onclick="scrollToSection('overview')">learn more</button>
+      <a href="overview.html"><button>learn more</button></a>
     </div>
   </section>
 
@@ -44,134 +45,6 @@
         <li><strong>Year:</strong> Project inception in 2012, key hardware publication in 2019, enclosures documentation updated through 2023</li>
         <li><strong>Format:</strong> Open‑source hardware (Smart Citizen Kits, Stations), documentation website, datasets, academic article (HardwareX), firmware and platform software</li>
         <li><strong>Audience:</strong> Citizen‑science participants, researchers, educators, environmental activists, community groups, open hardware developers, policymakers</li>
-      </ul>
-    </section>
-
-    <section id="overview" class="content-section">
-      <h2>OVERVIEW</h2>
-      <p class="subtitle">FAB LAB BARCELONA</p>
-      <p>Smart Citizen is a collaborative platform maintained by Fab Lab Barcelona since 2012. It enables citizens and researchers to monitor and share environmental data using open-source hardware and software.</p>
-      <ul>
-        <li>Licenses: CERN OHL v1.2, GNU GPL v3.0, GNU AGLP v3.0</li>
-        <li>Data: Stored via SmartCitizen Platform, Micro-SD, and SQL</li>
-        <li>Audience: Citizens, Scientists, Designers, Urban Thinkers</li>
-      </ul>
-    </section>
-
-    <section id="features" class="content-section">
-      <h2>DESIGN CONCEPT</h2>
-      <p class="subtitle">CITIZEN MONITORING SCIENCES</p>
-      <p>Rooted in citizen monitoring sciences, Smart Citizen promotes open participation in environmental research and advocacy. The platform is guided by principles of co-creation, change-making, empowerment, and openness.</p>
-      <ul>
-        <li>Monitoring of air, water, and biodiversity</li>
-        <li>Community-based action frameworks</li>
-        <li>Control over data access and privacy</li>
-      </ul>
-      <div class="concept-diagram">
-        <img src="https://docs.smartcitizen.me/assets/images/hypothesis-driven-deployment.png" alt="Hypothesis-Driven Deployment" style="max-width:100%; height:auto; margin-top:2rem;">
-        <p class="caption">Visualizing hypothesis-driven deployment strategy from Smart Citizen documentation.</p>
-      </div>
-    </section>
-
-    <section id="tech" class="content-section">
-      <h2>TECHNOLOGY</h2>
-      <p class="subtitle">SMART CITIZEN KIT</p>
-      <ul>
-        <li><strong>Smart Citizen Kit:</strong> Pre-assembled, plug-and-play device for air quality sensing</li>
-        <li><strong>Connectivity:</strong> MQTT and HTTP support for real-time data flow</li>
-        <li><strong>Setup:</strong> Domestic balconies with stable Wi-Fi and power access</li>
-        <li><strong>API:</strong> <a href="https://developer.smartcitizen.me">developer.smartcitizen.me</a></li>
-        <li><strong>Docs:</strong> <a href="https://docs.smartcitizen.me/data/data-platform/">Data Platform Documentation</a></li>
-      </ul>
-      <div style="display: flex; justify-content: center; align-items: flex-start; gap: 2rem; flex-wrap: wrap; margin-top:2rem;">
-        <div style="text-align:center; flex: 1 1 220px; min-width: 200px;">
-          <img src="https://docs.smartcitizen.me/assets/images/sck_1/sck_1.1_3.jpg" alt="Smart Citizen Data Collecting Kit" class="tech-image">
-          <div class="caption">Smart Citizen Data Collecting Kit</div>
-        </div>
-        <div style="text-align:center; flex: 1 1 220px; min-width: 200px;">
-          <img src="https://i.imgur.com/vgt8m3p.jpg" alt="Smart Citizen Data Collecting Kit 2.0" class="tech-image">
-          <div class="caption">Smart Citizen Data Collecting Kit 2.0</div>
-        </div>
-      </div>
-    </section>
-
-    <section id="analysis-layers" class="content-section">
-      <h2>Three Layers of Analysis</h2>
-      <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: space-between;">
-        <div style="flex: 1 1 250px; min-width: 220px; background: #f7f7f7; border-radius: 8px; padding: 2rem;">
-          <h3 style="color: #6B8E23; font-size: 1.2rem; text-transform: uppercase; margin-top: 0;">1. Sensing Layer</h3>
-          <p>
-            <strong>What it is:</strong> The foundation of the Smart Citizen ecosystem. This layer consists of open-source hardware devices (Smart Citizen Kits) equipped with sensors for air quality, noise, temperature, humidity, and more.<br>
-            <strong>How it works:</strong> These kits are deployed in homes, schools, and public spaces, enabling citizens to collect high-resolution, real-time environmental data.<br>
-            <strong>Why it matters:</strong> It democratizes data collection, making environmental monitoring accessible to everyone and fostering a sense of ownership and participation.
-          </p>
-        </div>
-        <div style="flex: 1 1 250px; min-width: 220px; background: #fff; border-radius: 8px; padding: 2rem; border: 1.5px solid #6B8E23;">
-          <h3 style="color: #6B8E23; font-size: 1.2rem; text-transform: uppercase; margin-top: 0;">2. Data Platform Layer</h3>
-          <p>
-            <strong>What it is:</strong> The Smart Citizen online platform and API.<br>
-            <strong>How it works:</strong> Data from all kits is sent to a central platform, where it is aggregated, visualized, and made openly accessible. Users can explore interactive maps, download datasets, and use APIs for custom analysis.<br>
-            <strong>Why it matters:</strong> This layer ensures transparency, open access, and interoperability, allowing anyone to use the data for research, education, or advocacy.
-          </p>
-        </div>
-        <div style="flex: 1 1 250px; min-width: 220px; background: #f7f7f7; border-radius: 8px; padding: 2rem;">
-          <h3 style="color: #6B8E23; font-size: 1.2rem; text-transform: uppercase; margin-top: 0;">3. Community & Insights Layer</h3>
-          <p>
-            <strong>What it is:</strong> The collaborative and participatory aspect of Smart Citizen.<br>
-            <strong>How it works:</strong> Communities, researchers, and policymakers use the platform to launch projects, share findings, and co-create solutions. The platform supports workshops, hackathons, and citizen science campaigns.<br>
-            <strong>Why it matters:</strong> This layer transforms raw data into actionable knowledge, empowering communities to address local challenges and influence policy.
-          </p>
-        </div>
-      </div>
-      <div class="caption" style="margin-top:2rem; color:#888; text-align:center; font-size:0.85rem;">
-        Inspired by the Smart Citizen platform’s open, participatory approach to environmental monitoring and urban innovation. <a href="https://smartcitizen.me" target="_blank" style="color:#6B8E23;">Learn more</a>
-      </div>
-    </section>
-
-    <section id="references" class="content-section">
-      <h2>RESOURCES</h2>
-      <p class="subtitle">DOCUMENTATION & LINKS</p>
-      <ul>
-        <li><a href="https://smartcitizen.me">smartcitizen.me</a></li>
-        <li><a href="https://github.com/fablabbcn/smartcitizen-api">Smart Citizen API (GitHub)</a></li>
-        <li><a href="https://github.com/fablabbcn/smartcitizen-web">Smart Citizen Web (GitHub)</a></li>
-        <li><a href="https://www.theguardian.com/science/political-science/2018/apr/18/smart-cities-need-thick-data-not-big-data">The Guardian – Thick Data</a></li>
-        <li><a href="https://civicus.org/images/ER%20cgd_brief.pdf">CIVICUS – Citizen-Generated Data</a></li>
-      </ul>
-    </section>
-
-    <section id="bibliography-authors" class="content-section">
-      <h2>BIBLIOGRAPHY</h2>
-      <p class="subtitle">WRITINGS BY PROJECT AUTHORS</p>
-      <ul>
-        <li><strong>Academic Publication:</strong> Camprodon, G.; González, Ó.; Barberán, V.; Pérez, M.; Smári, V.; de Heras, M. Á.; Bizzotto, A. (2019). <em>Smart Citizen Kit and Station: An open environmental monitoring system for citizen participation and scientific experimentation</em>. HardwareX, 6, e00070. <a href="https://arxiv.org">arxiv.org</a></li>
-        <li><strong>Technical Documentation:</strong> 
-          <ul>
-            <li><a href="https://docs.smartcitizen.me">Smart Citizen Docs</a> – comprehensive documentation covering technical specs, deployment, APIs, etc.</li>
-            <li><a href="https://enclosures.smartcitizen.me">Enclosure Design Folder</a> – CAD and 3D print files by IIGS/Stuttgart (CoKLIMAx, 2021–2024)</li>
-          </ul>
-        </li>
-        <li><strong>Additional Materials:</strong> GitHub repositories, open datasets, funding links (H2020 / Horizon), API endpoints: <a href="https://developer.smartcitizen.me">developer.smartcitizen.me</a></li>
-      </ul>
-    </section>
-
-    <section id="bibliography-external" class="content-section">
-      <h2>BIBLIOGRAPHY</h2>
-      <p class="subtitle">EXTERNAL APPRAISALS & CRITIQUES</p>
-      <ul>
-        <li><strong>Studies & Reviews:</strong>
-          <ul>
-            <li>Reviews of low-cost particulate sensors (e.g., Plantower PMS5003 in SCK), including accuracy, humidity impact, calibration studies</li>
-            <li><a href="https://docs.smartcitizen.me">Smart Citizen Docs</a> – references to evaluations from Finnish Meteorological Institute, South Coast AQMD</li>
-          </ul>
-        </li>
-        <li><strong>Scholarly Critiques:</strong>
-          <ul>
-            <li>Raj Gaire et al. (2018). <em>Crowdsensing and privacy in smart city applications</em>. <a href="https://arxiv.org">arxiv.org</a></li>
-            <li>Katalin Fehér (2020). <em>Expected participation and mentality of smart citizens</em>. <a href="https://arxiv.org">arxiv.org</a></li>
-            <li>Si Ying Tan & Araz Taeihagh (2020). <em>Smart City Governance in Developing Countries</em>. <a href="https://arxiv.org">arxiv.org</a></li>
-          </ul>
-        </li>
       </ul>
     </section>
   </main>
