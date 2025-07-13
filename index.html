@@ -5,37 +5,138 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Smart Citizen</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="site-header">
     <div class="logo">Smart Citizen</div>
     <nav class="site-nav">
-      <a href="#basic-info">Basic Info</a>
-      <a href="#bibliography-authors">Author Bib</a>
-      <a href="#bibliography-external">External Bib</a>
-      <a href="#overview">Overview</a>
-      <a href="#features">Concept</a>
-      <a href="#tech">Technology</a>
-      <a href="#references">Resources</a>
+      <a href="#bibliography-authors">author bib</a>
+      <a href="#bibliography-external">external bib</a>
+      <a href="#overview">overview</a>
+      <a href="#features">concept</a>
+      <a href="#tech">technology</a>
+      <a href="#references">resources</a>
     </nav>
   </header>
 
   <section id="hero">
     <div class="hero-text">
       <h1>Smart Citizen</h1>
-      <p>Open-source tools for collective environmental action</p>
-      <button onclick="scrollToSection('overview')">Learn More</button>
+      <p>open-source tools for collective environmental action</p>
+      <button onclick="scrollToSection('overview')">learn more</button>
     </div>
   </section>
 
-  <main id="main-content">
-    <!-- Add your content sections here as in the Canvas document -->
+  <main>
+    <section id="basic-info" class="content-section">
+      <h2>BASIC INFORMATION</h2>
+      <p class="subtitle">PROJECT DETAILS & CONTRIBUTORS</p>
+      <ul>
+        <li><strong>Title:</strong> Smart Citizen Kit & Platform</li>
+        <li><strong>Author(s):</strong> Fab Lab Barcelona, Institute for Advanced Architecture of Catalonia (IAAC), various contributors (e.g. Guillem Camprodon, Óscar González, Víctor Barberán, Máximo Pérez, etc.)</li>
+        <li><strong>Links:</strong> 
+          <ul>
+            <li><a href="https://enclosures.smartcitizen.me">enclosures.smartcitizen.me</a></li>
+            <li><a href="https://docs.smartcitizen.me">docs.smartcitizen.me</a></li>
+          </ul>
+        </li>
+        <li><strong>Year:</strong> Project inception in 2012, key hardware publication in 2019, enclosures documentation updated through 2023</li>
+        <li><strong>Format:</strong> Open‑source hardware (Smart Citizen Kits, Stations), documentation website, datasets, academic article (HardwareX), firmware and platform software</li>
+        <li><strong>Audience:</strong> Citizen‑science participants, researchers, educators, environmental activists, community groups, open hardware developers, policymakers</li>
+      </ul>
+    </section>
+
+    <section id="bibliography-authors" class="content-section">
+      <h2>BIBLIOGRAPHY</h2>
+      <p class="subtitle">WRITINGS BY PROJECT AUTHORS</p>
+      <ul>
+        <li><strong>Academic Publication:</strong> Camprodon, G.; González, Ó.; Barberán, V.; Pérez, M.; Smári, V.; de Heras, M. Á.; Bizzotto, A. (2019). <em>Smart Citizen Kit and Station: An open environmental monitoring system for citizen participation and scientific experimentation</em>. HardwareX, 6, e00070. <a href="https://arxiv.org">arxiv.org</a></li>
+        <li><strong>Technical Documentation:</strong> 
+          <ul>
+            <li><a href="https://docs.smartcitizen.me">Smart Citizen Docs</a> – comprehensive documentation covering technical specs, deployment, APIs, etc.</li>
+            <li><a href="https://enclosures.smartcitizen.me">Enclosure Design Folder</a> – CAD and 3D print files by IIGS/Stuttgart (CoKLIMAx, 2021–2024)</li>
+          </ul>
+        </li>
+        <li><strong>Additional Materials:</strong> GitHub repositories, open datasets, funding links (H2020 / Horizon), API endpoints: <a href="https://developer.smartcitizen.me">developer.smartcitizen.me</a></li>
+      </ul>
+    </section>
+
+    <section id="bibliography-external" class="content-section">
+      <h2>BIBLIOGRAPHY</h2>
+      <p class="subtitle">EXTERNAL APPRAISALS & CRITIQUES</p>
+      <ul>
+        <li><strong>Studies & Reviews:</strong>
+          <ul>
+            <li>Reviews of low-cost particulate sensors (e.g., Plantower PMS5003 in SCK), including accuracy, humidity impact, calibration studies</li>
+            <li><a href="https://docs.smartcitizen.me">Smart Citizen Docs</a> – references to evaluations from Finnish Meteorological Institute, South Coast AQMD</li>
+          </ul>
+        </li>
+        <li><strong>Scholarly Critiques:</strong>
+          <ul>
+            <li>Raj Gaire et al. (2018). <em>Crowdsensing and privacy in smart city applications</em>. <a href="https://arxiv.org">arxiv.org</a></li>
+            <li>Katalin Fehér (2020). <em>Expected participation and mentality of smart citizens</em>. <a href="https://arxiv.org">arxiv.org</a></li>
+            <li>Si Ying Tan & Araz Taeihagh (2020). <em>Smart City Governance in Developing Countries</em>. <a href="https://arxiv.org">arxiv.org</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section id="overview" class="content-section">
+      <h2>OVERVIEW</h2>
+      <p class="subtitle">FAB LAB BARCELONA</p>
+      <p>Smart Citizen is a collaborative platform maintained by Fab Lab Barcelona since 2012. It enables citizens and researchers to monitor and share environmental data using open-source hardware and software.</p>
+      <ul>
+        <li>Licenses: CERN OHL v1.2, GNU GPL v3.0, GNU AGLP v3.0</li>
+        <li>Data: Stored via SmartCitizen Platform, Micro-SD, and SQL</li>
+        <li>Audience: Citizens, Scientists, Designers, Urban Thinkers</li>
+      </ul>
+    </section>
+
+    <section id="features" class="content-section">
+      <h2>DESIGN CONCEPT</h2>
+      <p class="subtitle">CITIZEN MONITORING SCIENCES</p>
+      <p>Rooted in citizen monitoring sciences, Smart Citizen promotes open participation in environmental research and advocacy. The platform is guided by principles of co-creation, change-making, empowerment, and openness.</p>
+      <ul>
+        <li>Monitoring of air, water, and biodiversity</li>
+        <li>Community-based action frameworks</li>
+        <li>Control over data access and privacy</li>
+      </ul>
+      <div class="concept-diagram">
+        <img src="https://docs.smartcitizen.me/assets/images/hypothesis-driven-deployment.png" alt="Hypothesis-Driven Deployment" style="max-width:100%; height:auto; margin-top:2rem;">
+        <p class="caption">Visualizing hypothesis-driven deployment strategy from Smart Citizen documentation.</p>
+      </div>
+    </section>
+
+    <section id="tech" class="content-section">
+      <h2>TECHNOLOGY</h2>
+      <p class="subtitle">SMART CITIZEN KIT</p>
+      <ul>
+        <li><strong>Smart Citizen Kit:</strong> Pre-assembled, plug-and-play device for air quality sensing</li>
+        <li><strong>Connectivity:</strong> MQTT and HTTP support for real-time data flow</li>
+        <li><strong>Setup:</strong> Domestic balconies with stable Wi-Fi and power access</li>
+        <li><strong>API:</strong> <a href="https://developer.smartcitizen.me">developer.smartcitizen.me</a></li>
+        <li><strong>Docs:</strong> <a href="https://docs.smartcitizen.me/data/data-platform/">Data Platform Documentation</a></li>
+      </ul>
+    </section>
+
+    <section id="references" class="content-section">
+      <h2>RESOURCES</h2>
+      <p class="subtitle">DOCUMENTATION & LINKS</p>
+      <ul>
+        <li><a href="https://smartcitizen.me">smartcitizen.me</a></li>
+        <li><a href="https://github.com/fablabbcn/smartcitizen-api">Smart Citizen API (GitHub)</a></li>
+        <li><a href="https://github.com/fablabbcn/smartcitizen-web">Smart Citizen Web (GitHub)</a></li>
+        <li><a href="https://www.theguardian.com/science/political-science/2018/apr/18/smart-cities-need-thick-data-not-big-data">The Guardian – Thick Data</a></li>
+        <li><a href="https://civicus.org/images/ER%20cgd_brief.pdf">CIVICUS – Citizen-Generated Data</a></li>
+      </ul>
+    </section>
   </main>
 
   <footer class="site-footer">
-    Built by Sara Lin • 2025
+    built by sara lin • 2025
   </footer>
 
-  <script src="scripts.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
