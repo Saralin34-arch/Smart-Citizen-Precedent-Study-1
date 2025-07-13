@@ -3,115 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Smart Citizen Precedent Study</title>
-
-  <!-- Link to Calluna from Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Calluna:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-
-  <!-- Link to external CSS -->
-  <link rel="stylesheet" href="Style.css" />
+  <title>Smart Citizen</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <header class="site-header">
-      <div class="title">Smart Citizen Precedent Study</div>
-      <div class="subtitle">Author: Sara Lin</div>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="#datasheet">Datasheet</a></li>
-          <li><a href="#bibliography">Bibliography</a></li>
-          <li><a href="#criticism">Criticism</a></li>
-        </ul>
-      </nav>
-    </header>
+  <header class="site-header">
+    <div class="logo">Smart Citizen</div>
+    <nav class="site-nav">
+      <a href="#basic-info">Basic Info</a>
+      <a href="#bibliography-authors">Author Bib</a>
+      <a href="#bibliography-external">External Bib</a>
+      <a href="#overview">Overview</a>
+      <a href="#features">Concept</a>
+      <a href="#tech">Technology</a>
+      <a href="#references">Resources</a>
+    </nav>
+  </header>
 
-    <div class="info-block" id="datasheet">
-      <h3>Datasheet for the Project "Smart Citizen Kit / Platform"</h3>
-      <h4 class="section-subtitle">Essential project information including title, authors, timeline, format, and target audience</h4>
-      <table>
-        <tr>
-          <td><strong>Title:</strong></td>
-          <td>Smart Citizen Kit & Platform</td>
-        </tr>
-        <tr>
-          <td><strong>Author(s):</strong></td>
-          <td>Fab Lab Barcelona, Institute for Advanced Architecture of Catalonia (IAAC), various contributors (e.g. Guillem Camprodon, Óscar González, Víctor Barberán, Máximo Pérez, etc.)</td>
-        </tr>
-        <tr>
-          <td><strong>Year:</strong></td>
-          <td>Project inception in 2012, key hardware publication in 2019, enclosures documentation updated through 2023</td>
-        </tr>
-        <tr>
-          <td><strong>Format:</strong></td>
-          <td>Open‑source hardware (Smart Citizen Kits, Stations), documentation website, datasets, academic article (HardwareX), firmware and platform software</td>
-        </tr>
-        <tr>
-          <td><strong>Audience:</strong></td>
-          <td>Citizen‑science participants, researchers, educators, environmental activists, community groups, open hardware developers, policymakers</td>
-        </tr>
-      </table>
+  <section id="hero">
+    <div class="hero-text">
+      <h1>Smart Citizen</h1>
+      <p>Open-source tools for collective environmental action</p>
+      <button onclick="scrollToSection('overview')">Learn More</button>
     </div>
+  </section>
 
-    <div class="section" id="bibliography">
-      <h3>2. Bibliography / Folder of Writings by the Project Authors</h3>
-      <h4 class="section-subtitle">Primary sources including academic publications, technical documentation, and official project resources</h4>
-      
-      <h4>Academic Publication:</h4>
-      <p>Camprodon, G.; González, Ó.; Barberán, V.; Pérez, M.; Smári, V.; de Heras, M. Á.; Bizzotto, A. (2019). Smart Citizen Kit and Station: An open environmental monitoring system for citizen participation and scientific experimentation. HardwareX, 6, e00070.<br>
-      <a href="https://arxiv.org" target="_blank">arxiv.org</a></p>
-      
-      <h4>Technical Documentation and Resources:</h4>
-      <ul>
-        <li><strong>Smart Citizen Docs</strong> – comprehensive documentation covering project background, guides, technical specs, sensor guides, firmware, deployment strategies, participatory methodologies, API, hardware design, etc.<br>
-        <a href="https://docs.smartcitizen.me" target="_blank">docs.smartcitizen.me</a></li>
-        <li><strong>Enclosure design folder</strong> – detailed CAD and 3D‑print files for SCK versions (1.5/2.0/2.1) produced by IIGS/Stuttgart under CoKLIMAx (2021–2024)<br>
-        <a href="https://enclosures.smartcitizen.me" target="_blank">enclosures.smartcitizen.me</a></li>
-      </ul>
-      
-      <h4>Additional Materials:</h4>
-      <p>GitHub repositories, open datasets, funding references (H2020 / Horizon), API endpoints (<a href="https://developer.smartcitizen.me" target="_blank">developer.smartcitizen.me</a>), and guides for community/hardware usage</p>
-    </div>
+  <main id="main-content">
+    <!-- Add your content sections here as in the Canvas document -->
+  </main>
 
-    <div class="section" id="criticism">
-      <h3>3. Bibliography / Folder of What Others Have Written About the Project (Appraisal / Criticism)</h3>
-      <h4 class="section-subtitle">External academic perspectives, critical analyses, and empirical evaluations of citizen science sensor systems</h4>
-      
-      <p>While smartcitizen.me itself doesn't include independent reviews, here are some representative external academic and critical perspectives around citizen‑science sensor projects that frequently discuss Smart Citizen or similar systems:</p>
-      
-      <h4>Studies referencing Smart Citizen or comparable sensor systems:</h4>
-      <ul>
-        <li>Reviews of low‑cost particulate sensors such as the Plantower PMS5003 (used in Smart Citizen Kits), including performance evaluations, limitations, humidity effects, and calibration analyses<br>
-        <a href="https://enclosures.smartcitizen.me" target="_blank">enclosures.smartcitizen.me</a></li>
-      </ul>
-      
-      <h4>General scholarly critique of citizen sensing in smart cities:</h4>
-      <ul>
-        <li><strong>Raj Gaire et al. (2018).</strong> Crowdsensing and privacy in smart city applications. Examines privacy implications of citizen sensing infrastructure.<br>
-        <a href="https://arxiv.org" target="_blank">arxiv.org</a></li>
-        <li><strong>Katalin Fehér (2020).</strong> Expected participation and mentality of smart citizens in smart cities. Frames roles of citizens, ethics, engagement.<br>
-        <a href="https://arxiv.org" target="_blank">arxiv.org</a></li>
-        <li><strong>Si Ying Tan & Araz Taeihagh (2020).</strong> Smart City Governance in Developing Countries… explores participatory frameworks, barriers, regulatory contexts; indirectly relevant to interpret Smart Citizen's governance implications.<br>
-        <a href="https://arxiv.org" target="_blank">arxiv.org</a></li>
-      </ul>
-      
-      <h4>Empirical sensor evaluations:</h4>
-      <p>Independent field or laboratory studies on PMS5003 sensors used in Smart Citizen Kits, such as Finnish Meteorological Institute and South Coast AQMD evaluations (cited on the docs site) showing mixed accuracy depending on conditions<br>
-      <a href="https://docs.smartcitizen.me" target="_blank">docs.smartcitizen.me</a></p>
-    </div>
-    
-    <footer class="site-footer">
-      <div class="footer-content">
-        <p>&copy; 2024 Smart Citizen Precedent Study. Academic research project.</p>
-        <div class="footer-links">
-          <a href="https://smartcitizen.me" target="_blank">Smart Citizen Platform</a>
-          <a href="https://fablab.es" target="_blank">Fab Lab Barcelona</a>
-          <a href="https://iaac.net" target="_blank">IAAC</a>
-        </div>
-      </div>
-    </footer>
-  </div>
+  <footer class="site-footer">
+    Built by Sara Lin • 2025
+  </footer>
 
-  <!-- Link to external JavaScript -->
-  <script src="script.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>
