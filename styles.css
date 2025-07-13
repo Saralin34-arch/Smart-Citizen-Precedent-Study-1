@@ -1,18 +1,18 @@
-/* Base Styles - Bauhaus Inspired */
+/* Base Styles - Clean & Simple */
 body {
   margin: 0;
-  font-family: 'Inter', 'Futura', 'Arial', sans-serif;
+  font-family: 'Inter', 'Arial', sans-serif;
   background-color: #ffffff;
-  color: #1a1a1a;
+  color: #333333;
   font-size: 16px;
   line-height: 1.6;
   font-weight: 400;
 }
 
-/* Header Styles - Bauhaus */
+/* Header Styles - Clean & Simple */
 .site-header {
-  background-color: #e63946;
-  border-bottom: 4px solid #1d3557;
+  background: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,303 +20,168 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .logo {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.5rem;
-  color: #ffffff;
+  color: #333333;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
 }
 
 .site-nav a {
   margin-left: 2.5rem;
   text-decoration: none;
-  color: #ffffff;
+  color: #666666;
   font-size: 0.9rem;
   text-transform: uppercase;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.1em;
   font-weight: 500;
-  position: relative;
-  transition: all 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .site-nav a:hover {
-  color: #f1faee;
-  transform: translateY(-2px);
+  color: #333333;
 }
 
 .site-nav a.active {
-  color: #f1faee;
-  font-weight: 700;
+  color: #333333;
+  font-weight: 600;
 }
 
-.site-nav a::after {
-  content: '';
-  position: absolute;
-  bottom: -8px;
-  left: 0;
-  width: 0;
-  height: 3px;
-  background-color: #f1faee;
-  transition: width 0.3s ease;
-}
-
-.site-nav a:hover::after,
-.site-nav a.active::after {
-  width: 100%;
-}
-
-/* Hero Section - Bauhaus */
+/* Hero Section - Clean & Simple */
 #hero {
   height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: linear-gradient(135deg, rgba(29, 53, 87, 0.9), rgba(230, 57, 70, 0.8)), url('https://i.imgur.com/AU9AfXX.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://i.imgur.com/AU9AfXX.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: #ffffff;
   padding: 2rem;
-  position: relative;
-}
-
-#hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: repeating-linear-gradient(
-    45deg,
-    transparent,
-    transparent 20px,
-    rgba(255, 255, 255, 0.05) 20px,
-    rgba(255, 255, 255, 0.05) 40px
-  );
-}
-
-.hero-text {
-  position: relative;
-  z-index: 2;
 }
 
 .hero-text h1 {
-  font-size: 5rem;
-  font-weight: 900;
+  font-size: 4rem;
+  font-weight: 700;
   margin: 0;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
-  text-shadow: 4px 4px 0px rgba(0,0,0,0.3);
-  background: linear-gradient(45deg, #f1faee, #a8dadc);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  letter-spacing: 0.1em;
 }
 
 .hero-text p {
-  font-size: 1.5rem;
-  margin-top: 2rem;
-  color: #f1faee;
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
+  color: #ffffff;
   font-weight: 300;
-  letter-spacing: 0.1em;
 }
 
 .hero-text button {
-  margin-top: 3rem;
-  padding: 1rem 2.5rem;
-  background: #f1faee;
-  color: #1d3557;
-  border: 3px solid #1d3557;
-  font-weight: 700;
-  font-size: 1.1rem;
+  margin-top: 2.5rem;
+  padding: 1rem 2rem;
+  background: #ffffff;
+  color: #333333;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
   text-transform: uppercase;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.1em;
   cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
+  transition: background-color 0.3s ease;
 }
 
 .hero-text button:hover {
-  background: #1d3557;
-  color: #f1faee;
-  transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  background: #f0f0f0;
 }
 
-.hero-text button::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-  transition: left 0.5s;
-}
-
-.hero-text button:hover::before {
-  left: 100%;
-}
-
-/* Content Sections - Bauhaus */
+/* Content Sections - Clean & Simple */
 .content-section {
-  padding: 6rem 8vw;
+  padding: 5rem 8vw;
   background-color: #ffffff;
-  border-top: 4px solid #e63946;
-  position: relative;
+  border-top: 1px solid #e0e0e0;
 }
 
 .content-section:nth-child(even) {
-  background-color: #f1faee;
-  border-top-color: #1d3557;
-}
-
-.content-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background: linear-gradient(90deg, #e63946, #1d3557, #a8dadc);
+  background-color: #fafafa;
 }
 
 h2 {
-  font-size: 2.5rem;
-  font-weight: 900;
+  font-size: 2rem;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.15em;
-  margin-bottom: 3rem;
-  color: #1d3557;
-  position: relative;
-  display: inline-block;
-}
-
-h2::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 60px;
-  height: 4px;
-  background: #e63946;
+  letter-spacing: 0.1em;
+  margin-bottom: 2rem;
+  color: #333333;
 }
 
 .subtitle {
-  font-size: 1rem;
-  color: #457b9d;
-  margin-top: -2rem;
-  margin-bottom: 3rem;
+  font-size: 0.875rem;
+  color: #666666;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-weight: 600;
-}
-
-/* Typography - Bauhaus */
-ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-ul li {
-  position: relative;
-  padding-left: 2rem;
-  margin-bottom: 1rem;
-  line-height: 1.8;
-}
-
-ul li::before {
-  content: '■';
-  position: absolute;
-  left: 0;
-  color: #e63946;
-  font-size: 1.2em;
-}
-
-a {
-  color: #1d3557;
-  text-decoration: none;
-  border-bottom: 2px solid #a8dadc;
-  transition: all 0.3s ease;
+  letter-spacing: 0.05em;
   font-weight: 500;
 }
 
+/* Typography - Clean & Simple */
+ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+ul li {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+a {
+  color: #333333;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
 a:hover {
-  color: #e63946;
-  border-bottom-color: #e63946;
-  background-color: rgba(168, 218, 220, 0.1);
-  padding: 2px 4px;
-  margin: -2px -4px;
+  color: #666666;
 }
 
-/* Concept Diagram - Bauhaus */
+/* Concept Diagram - Clean & Simple */
 .concept-diagram {
-  margin-top: 3rem;
+  margin-top: 2rem;
   padding: 2rem;
-  background: linear-gradient(135deg, #f1faee, #a8dadc);
-  border: 3px solid #1d3557;
-  border-radius: 0;
-  position: relative;
-}
-
-.concept-diagram::before {
-  content: '';
-  position: absolute;
-  top: -8px;
-  left: -8px;
-  right: -8px;
-  bottom: -8px;
-  background: linear-gradient(45deg, #e63946, #1d3557);
-  z-index: -1;
+  background: #fafafa;
+  border: 1px solid #e0e0e0;
+  text-align: center;
 }
 
 .concept-diagram img {
-  max-width: 30%;
+  max-width: 15%;
   height: auto;
   display: block;
   margin: 0 auto;
-  border: 2px solid #1d3557;
-  box-shadow: 8px 8px 0px rgba(29, 53, 87, 0.3);
 }
 
 .caption {
-  font-size: 1rem;
-  color: #1d3557;
-  margin-top: 1.5rem;
+  font-size: 0.75rem;
+  color: #666666;
+  margin-top: 1rem;
   text-align: center;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  font-weight: 400;
+  font-style: italic;
 }
 
-/* Footer - Bauhaus */
+/* Footer - Clean & Simple */
 .site-footer {
-  background: linear-gradient(135deg, #1d3557, #e63946);
-  color: #f1faee;
+  background: #333333;
+  color: #ffffff;
   text-align: center;
-  padding: 3rem 2rem;
-  font-size: 1rem;
-  letter-spacing: 0.1em;
-  font-weight: 600;
-  text-transform: uppercase;
-  position: relative;
-}
-
-.site-footer::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, #f1faee, #a8dadc, #f1faee);
+  padding: 2rem;
+  font-size: 0.875rem;
+  font-weight: 400;
 }
 
 /* Responsive Design */
