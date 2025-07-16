@@ -326,6 +326,64 @@ a:hover {
   overflow-x: auto;
 }
 
+.page-title-block {
+  text-align: center;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.page-title {
+  font-size: 2.3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.page-subtitle {
+  font-size: 1.1rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.intro-card {
+  background: #f8f8f8;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+  padding: 2.2rem 2rem 1.5rem 2rem;
+  max-width: 900px;
+  margin: 0 auto 2.5rem auto;
+}
+
+.intro-text {
+  font-size: 1.08rem;
+  color: #333;
+  margin-bottom: 1.2rem;
+  text-align: left;
+}
+
+.intro-list {
+  margin: 0 0 0 1.2rem;
+  color: #333;
+  font-size: 1rem;
+  padding-left: 1.2rem;
+}
+
+.analysis-title {
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.08em;
+  border-left: 5px solid #FFD700;
+  padding-left: 0.7rem;
+}
+
 @media (max-width: 900px) {
   .diagram-card, .analysis-cards {
     max-width: 100%;
