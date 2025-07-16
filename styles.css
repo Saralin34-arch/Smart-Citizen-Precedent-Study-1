@@ -347,14 +347,23 @@ a:hover {
   border-left: 8px solid #FFD700;
 }
 
-.page-subtitle {
-  font-size: 1.1rem;
+.page-subtitle,
+.diagram-title,
+.analysis-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
   color: #888;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-weight: 500;
   margin-top: 0;
+  margin-bottom: 1.2rem;
   padding-left: 0.7rem;
+}
+
+.diagram-title,
+.analysis-title {
+  color: #333;
+  border-left: 5px solid #FFD700;
 }
 
 .intro-card {
@@ -390,6 +399,18 @@ a:hover {
   letter-spacing: 0.08em;
   border-left: 5px solid #FFD700;
   padding-left: 0.7rem;
+}
+
+.tech-image {
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  object-fit: cover;
+  background: #eee;
+  display: block;
+  margin: 0 auto;
 }
 
 @media (max-width: 900px) {
