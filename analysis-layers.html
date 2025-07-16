@@ -30,16 +30,43 @@
           <div style="text-align: center; margin-bottom: 1.5rem;">
             <div style="width: 60px; height: 60px; background: #333; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; color: #fff; font-weight: 700; font-size: 1.5rem;">1</div>
           </div>
-          <h3 style="color: #333; font-size: 1.3rem; text-transform: uppercase; margin-top: 0; text-align: center; letter-spacing: 0.1em;">Sensing Layer</h3>
+          <h3 style="color: #333; font-size: 1.3rem; text-transform: uppercase; margin-top: 0; text-align: center; letter-spacing: 0.1em;">Ontological Analysis</h3>
           <div style="background: #f8f8f8; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0;">
-            <p style="margin: 0; font-weight: 500; color: #333;">What it is:</p>
-            <p style="margin: 0.5rem 0 1rem 0;">The foundation of the Smart Citizen ecosystem. This layer consists of open-source hardware devices (Smart Citizen Kits) equipped with sensors for air quality, noise, temperature, humidity, and more.</p>
-            
-            <p style="margin: 0; font-weight: 500; color: #333;">How it works:</p>
-            <p style="margin: 0.5rem 0 1rem 0;">These kits are deployed in homes, schools, and public spaces, enabling citizens to collect high-resolution, real-time environmental data.</p>
-            
-            <p style="margin: 0; font-weight: 500; color: #333;">Why it matters:</p>
-            <p style="margin: 0.5rem 0 0 0;">It democratizes data collection, making environmental monitoring accessible to everyone and fostering a sense of ownership and participation.</p>
+            <p style="margin: 0 0 1rem 0; font-weight: 500; color: #333;">What exists in the Smart Citizen ecosystem? What are its components, infrastructure, and modes of interaction?</p>
+            <ul style="margin: 0 0 1rem 1.2rem; color: #333; font-size: 1rem;">
+              <li><strong>A. Hardware Infrastructure</strong>
+                <ul style='margin-top:0.5rem;'>
+                  <li>Smart Citizen Kit (SCK): Modular, open-source, low-cost environmental sensing device.</li>
+                  <li>Core Modules:
+                    <ul>
+                      <li>Data Board: Wi‑Fi microcontroller with SD logging and expansion ports.</li>
+                      <li>Sensor Boards: Urban Board (T, RH, pressure, light, noise, UV) and optional modules (PM2.5, NO₂, VOC, CO₂, water flow, gas sensors).</li>
+                    </ul>
+                  </li>
+                  <li>3D-Printed Enclosures: Accessible, locally fabricated, with outdoor-ready options.</li>
+                  <li>Power Management: USB, battery, or solar panel for decentralized installations.</li>
+                </ul>
+              </li>
+              <li style="margin-top: 1rem;"><strong>B. Digital Infrastructure</strong>
+                <ul style='margin-top:0.5rem;'>
+                  <li>Embedded Firmware: Controls data acquisition, timestamping, buffering, and transmission.</li>
+                  <li>Smart Citizen Platform: Cloud-hosted dashboard for real-time/historical data, CSV export, RESTful API.</li>
+                  <li>APIs & Developer Resources: Extensive API docs, integration with Python, Jupyter, R.</li>
+                </ul>
+              </li>
+              <li style="margin-top: 1rem;"><strong>C. Human and Social Layer</strong>
+                <ul style='margin-top:0.5rem;'>
+                  <li>Actors: Local citizens, community organizations, educators, policy advocates, researchers, developers.</li>
+                  <li>Practices: Participatory sensing, collective analysis, calibration workshops, advocacy, storytelling.</li>
+                </ul>
+              </li>
+              <li style="margin-top: 1rem;"><strong>D. Knowledge & Documentation</strong>
+                <ul style='margin-top:0.5rem;'>
+                  <li>Extensive technical docs, tutorials, circuit diagrams, CAD files, metadata standards.</li>
+                  <li>Online knowledge base: Sensing principles, sensor accuracy, deployment best practices.</li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
 
@@ -47,16 +74,36 @@
           <div style="text-align: center; margin-bottom: 1.5rem;">
             <div style="width: 60px; height: 60px; background: #333; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; color: #fff; font-weight: 700; font-size: 1.5rem;">2</div>
           </div>
-          <h3 style="color: #333; font-size: 1.3rem; text-transform: uppercase; margin-top: 0; text-align: center; letter-spacing: 0.1em;">Data Platform Layer</h3>
+          <h3 style="color: #333; font-size: 1.3rem; text-transform: uppercase; margin-top: 0; text-align: center; letter-spacing: 0.1em;">Historical & Contextual Analysis</h3>
           <div style="background: #f8f8f8; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0;">
-            <p style="margin: 0; font-weight: 500; color: #333;">What it is:</p>
-            <p style="margin: 0.5rem 0 1rem 0;">The Smart Citizen online platform and API.</p>
-            
-            <p style="margin: 0; font-weight: 500; color: #333;">How it works:</p>
-            <p style="margin: 0.5rem 0 1rem 0;">Data from all kits is sent to a central platform, where it is aggregated, visualized, and made openly accessible. Users can explore interactive maps, download datasets, and use APIs for custom analysis.</p>
-            
-            <p style="margin: 0; font-weight: 500; color: #333;">Why it matters:</p>
-            <p style="margin: 0.5rem 0 0 0;">This layer ensures transparency, open access, and interoperability, allowing anyone to use the data for research, education, or advocacy.</p>
+            <p style="margin: 0 0 1rem 0; font-weight: 500; color: #333;">What was the context of its creation? What need did it respond to?</p>
+            <ul style="margin: 0 0 1rem 1.2rem; color: #333; font-size: 1rem;">
+              <li><strong>A. Historical Genesis</strong>
+                <ul style='margin-top:0.5rem;'>
+                  <li>Originated in 2012 at Fab Lab Barcelona (IAAC).</li>
+                  <li>Response to corporate-led smart city frameworks that excluded citizens from data ownership and decision-making.</li>
+                  <li>Launched during the rise of open hardware, participatory sensing, and citizen science.</li>
+                </ul>
+              </li>
+              <li style="margin-top: 1rem;"><strong>B. Philosophical Position</strong>
+                <ul style='margin-top:0.5rem;'>
+                  <li>Counters techno-solutionism and top-down governance; promotes grassroots action.</li>
+                  <li>Aligns with environmental justice, data commoning, and sovereignty—especially in urban stress contexts.</li>
+                </ul>
+              </li>
+              <li style="margin-top: 1rem;"><strong>C. Intended Audiences</strong>
+                <ul style='margin-top:0.5rem;'>
+                  <li>Primary: DIY citizen scientists, educators, activists, air quality watchdogs.</li>
+                  <li>Secondary: Policymakers, urban planners, sustainability researchers.</li>
+                </ul>
+              </li>
+              <li style="margin-top: 1rem;"><strong>D. Sociopolitical Conditions</strong>
+                <ul style='margin-top:0.5rem;'>
+                  <li>Post-2008 crisis: citizen empowerment and democratic innovation in Europe.</li>
+                  <li>Supported by EU-funded programs (Making Sense, iSCAPE, DECODE) for co-creation and shared infrastructure.</li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
 
@@ -64,16 +111,31 @@
           <div style="text-align: center; margin-bottom: 1.5rem;">
             <div style="width: 60px; height: 60px; background: #333; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; color: #fff; font-weight: 700; font-size: 1.5rem;">3</div>
           </div>
-          <h3 style="color: #333; font-size: 1.3rem; text-transform: uppercase; margin-top: 0; text-align: center; letter-spacing: 0.1em;">Community & Insights Layer</h3>
+          <h3 style="color: #333; font-size: 1.3rem; text-transform: uppercase; margin-top: 0; text-align: center; letter-spacing: 0.1em;">Visual & Aesthetic Representation</h3>
           <div style="background: #f8f8f8; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0;">
-            <p style="margin: 0; font-weight: 500; color: #333;">What it is:</p>
-            <p style="margin: 0.5rem 0 1rem 0;">The collaborative and participatory aspect of Smart Citizen.</p>
-            
-            <p style="margin: 0; font-weight: 500; color: #333;">How it works:</p>
-            <p style="margin: 0.5rem 0 1rem 0;">Communities, researchers, and policymakers use the platform to launch projects, share findings, and co-create solutions. The platform supports workshops, hackathons, and citizen science campaigns.</p>
-            
-            <p style="margin: 0; font-weight: 500; color: #333;">Why it matters:</p>
-            <p style="margin: 0.5rem 0 0 0;">This layer transforms raw data into actionable knowledge, empowering communities to address local challenges and influence policy.</p>
+            <p style="margin: 0 0 1rem 0; font-weight: 500; color: #333;">How does Smart Citizen communicate its ideas through visual and design language?</p>
+            <ul style="margin: 0 0 1rem 1.2rem; color: #333; font-size: 1rem;">
+              <li><strong>A. Visual Style and Communication</strong>
+                <ul style='margin-top:0.5rem;'>
+                  <li>Functional, minimalist, schematic—rooted in maker movement and Fab Lab principles.</li>
+                  <li>Dashboards: sensor icons, line graphs, color-coded status for clarity to all users.</li>
+                  <li>3D models and assembly diagrams: open-source, educational (exploded views, GitHub CAD releases).</li>
+                </ul>
+              </li>
+              <li style="margin-top: 1rem;"><strong>B. Representation as Rhetoric</strong>
+                <ul style='margin-top:0.5rem;'>
+                  <li>Visual simplicity = transparency and trust. Emphasis on legibility, hackability, open access.</li>
+                  <li>Rawness of enclosure/wiring: tool to be understood, customized, iterated—not a black box.</li>
+                </ul>
+              </li>
+              <li style="margin-top: 1rem;"><strong>C. Precedents and Influences</strong>
+                <ul style='margin-top:0.5rem;'>
+                  <li>Arduino, Processing: open-source electronics and creative code.</li>
+                  <li>Design Justice: accessibility and open design.</li>
+                  <li>"Critical making": blending technical skill with cultural critique.</li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
