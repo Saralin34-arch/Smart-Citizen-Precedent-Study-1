@@ -153,7 +153,7 @@ a:hover {
   border-radius: 14px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.07);
   padding: 2.5rem 2rem 2rem 2rem;
-  margin: 2.5rem auto 2.5rem auto;
+  margin: 3.5rem auto 3.5rem auto;
   max-width: 1100px;
   display: flex;
   flex-direction: column;
@@ -164,7 +164,7 @@ a:hover {
   max-width: 400px;
   width: 40%;
   display: block;
-  margin: 0 auto 1.2rem auto;
+  margin: 0 auto 2.2rem auto;
 }
 
 .diagram-title {
@@ -172,7 +172,7 @@ a:hover {
   text-transform: uppercase;
   color: #333;
   margin-top: 0;
-  margin-bottom: 1.2rem;
+  margin-bottom: 2.2rem;
   letter-spacing: 0.08em;
   border-left: 5px solid #FFD700;
   padding-left: 0.7rem;
@@ -183,6 +183,7 @@ a:hover {
   font-size: 0.98rem;
   color: #888;
   margin-top: 0.5rem;
+  margin-bottom: 2.2rem;
   text-align: center;
   font-style: italic;
 }
@@ -190,7 +191,7 @@ a:hover {
 .analysis-cards {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 3.5rem;
   max-width: 1100px;
   margin: 2.5rem auto 2.5rem auto;
 }
