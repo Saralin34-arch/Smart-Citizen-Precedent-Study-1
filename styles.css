@@ -153,31 +153,48 @@ a:hover {
   padding: 2rem;
   background: #f8f8f8;
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
 }
 
-.concept-diagram .diagram-text {
-  flex: 2;
-  text-align: left;
-}
-
-.concept-diagram img {
-  max-width: 3.75%;
-  min-width: 60px;
-  height: auto;
+.concept-raster-img {
+  max-width: 8500px;
+  width: 100%;
   display: block;
   margin: 0 auto;
 }
 
 .concept-diagram .caption {
-  font-size: 0.75rem;
-  color: #888;
-  margin-top: 0.5rem;
   text-align: center;
-  font-weight: 400;
-  font-style: italic;
+}
+
+.diagram-img-wrap {
+  flex: 1 1 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.diagram-img-wrap img {
+  max-width: 1700px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.diagram-text {
+  flex: 1 1 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.diagram-text .caption {
+  text-align: left;
+  margin: 0;
 }
 
 .tech-image {
@@ -199,17 +216,138 @@ a:hover {
   font-weight: 400;
 }
 
+.precedent-analysis {
+  margin: 3rem 0 2rem 0;
+}
+
+.precedent-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #333;
+  border-left: 8px solid #FFD700;
+  padding-left: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.precedent-columns {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+
+.precedent-col {
+  flex: 1 1 350px;
+  min-width: 320px;
+  max-width: 600px;
+  background: #f8f8f8;
+  border-radius: 12px;
+  padding: 2rem 2rem 1.5rem 2rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.precedent-col h3 {
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  letter-spacing: 0.08em;
+  border-left: 5px solid #FFD700;
+  padding-left: 0.7rem;
+}
+
+.precedent-col pre {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.2rem;
+  font-size: 0.98rem;
+  color: #222;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+
+.precedent-caption {
+  color: #888;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.precedent-divider {
+  margin: 3rem 0;
+  border: none;
+  border-top: 2px solid #eee;
+}
+
+.precedent-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: space-between;
+}
+
+.precedent-section {
+  flex: 1 1 320px;
+  min-width: 300px;
+  max-width: 420px;
+  background: #f8f8f8;
+  border-radius: 12px;
+  padding: 2rem 2rem 1.5rem 2rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  margin-bottom: 1.5rem;
+}
+
+.precedent-section h3 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  letter-spacing: 0.08em;
+  border-left: 5px solid #FFD700;
+  padding-left: 0.7rem;
+}
+
+.precedent-diagram pre {
+  margin: 0 auto !important;
+  display: block;
+  text-align: center !important;
+  width: 100%;
+  max-width: 900px;
+  background: #fff;
+  border-radius: 8px;
+  border: 1.5px solid #eee;
+  padding: 1.2rem;
+  color: #222;
+  overflow-x: auto;
+}
+
 @media (max-width: 900px) {
   .concept-diagram {
     flex-direction: column;
-    align-items: center;
     gap: 1.5rem;
+    padding: 1.2rem;
   }
-  .concept-diagram img {
-    max-width: 30%;
+  .diagram-img-wrap img {
+    max-width: 100%;
   }
-  .concept-diagram .diagram-text {
-    text-align: center;
+  .diagram-text {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .precedent-columns, .precedent-bottom {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .precedent-col, .precedent-section {
+    max-width: 100%;
+    min-width: 0;
+    padding: 1.5rem 1rem 1rem 1rem;
   }
 }
 
