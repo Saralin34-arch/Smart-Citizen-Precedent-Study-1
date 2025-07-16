@@ -328,9 +328,12 @@ a:hover {
 }
 
 .page-title-block {
-  text-align: center;
+  text-align: left;
   margin-top: 2.5rem;
   margin-bottom: 1.5rem;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .page-title {
@@ -340,6 +343,8 @@ a:hover {
   letter-spacing: 0.12em;
   color: #222;
   margin-bottom: 0.5rem;
+  padding-left: 0.7rem;
+  border-left: 8px solid #FFD700;
 }
 
 .page-subtitle {
@@ -349,6 +354,7 @@ a:hover {
   letter-spacing: 0.08em;
   font-weight: 500;
   margin-top: 0;
+  padding-left: 0.7rem;
 }
 
 .intro-card {
@@ -356,8 +362,9 @@ a:hover {
   border-radius: 14px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.07);
   padding: 2.2rem 2rem 1.5rem 2rem;
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto 2.5rem auto;
+  text-align: left;
 }
 
 .intro-text {
