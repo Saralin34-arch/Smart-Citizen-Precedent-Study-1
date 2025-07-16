@@ -8,9 +8,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- =========================
+       HEADER & NAVIGATION
+       ========================= -->
   <header class="site-header">
     <div class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">Smart Citizen</a></div>
-    <nav class="site-nav">
+    <nav class="site-nav" aria-label="Main Navigation">
       <a href="index.html">home</a>
       <a href="concept.html">concept</a>
       <a href="hardware.html">hardware</a>
@@ -19,11 +22,15 @@
       <a href="bibliography-authors.html">bibliography</a>
     </nav>
   </header>
+
   <main>
-    <div class="page-title-block">
+    <!-- =========================
+         PAGE TITLE & INTRO
+         ========================= -->
+    <section class="page-title-block">
       <h1 class="page-title">Smart Citizen Concept</h1>
       <p class="page-subtitle">Citizen Monitoring Sciences</p>
-    </div>
+    </section>
 
     <section class="intro-card">
       <p class="intro-text">Rooted in citizen monitoring sciences, Smart Citizen promotes open participation in environmental research and advocacy. The platform is guided by principles of co-creation, change-making, empowerment, and openness.</p>
@@ -34,6 +41,9 @@
       </ul>
     </section>
 
+    <!-- =========================
+         CONCEPT DIAGRAMS
+         ========================= -->
     <section class="diagram-card">
       <h2 class="diagram-title">Smart Citizen Concept Diagram</h2>
       <img src="https://docs.smartcitizen.me/assets/images/hypothesis-driven-deployment.png" alt="Hypothesis-Driven Deployment" class="main-diagram-img">
@@ -42,7 +52,7 @@
 
     <section class="diagram-card">
       <h2 class="diagram-title">A. Relational Diagram of the Precedent (ANT)</h2>
-      <pre class="main-diagram-img" style="margin-bottom:0.5rem;">
+      <pre class="main-diagram-img diagram-pre">
 [Citizen Users] ← deploy → [Smart Citizen Kit (SCK)] 
                         ↓
         collects data from → [Urban Environment]
@@ -60,8 +70,11 @@
       <p class="diagram-caption">Each node represents a stakeholder or system component, and arrows represent relationships (data flow, authorship, usage, funding).</p>
     </section>
 
+    <!-- =========================
+         ANALYSIS CARDS
+         ========================= -->
     <section class="analysis-cards">
-      <div class="analysis-card">
+      <article class="analysis-card">
         <h2 class="analysis-title">B. Methodological Analysis</h2>
         <ul>
           <li><strong>1. Software Approach:</strong>
@@ -88,8 +101,9 @@
             </ul>
           </li>
         </ul>
-      </div>
-      <div class="analysis-card">
+      </article>
+
+      <article class="analysis-card">
         <h2 class="analysis-title">C. Rhetorical Analysis</h2>
         <p><strong>What is Smart Citizen trying to say?</strong></p>
         <ul>
@@ -104,8 +118,9 @@
           <li>Participation: Workshops, community labs, citizen pilots are foregrounded in the documentation</li>
           <li>Critique: It resists the dominant smart city paradigm of surveillance and commercial optimization</li>
         </ul>
-      </div>
-      <div class="analysis-card">
+      </article>
+
+      <article class="analysis-card">
         <h2 class="analysis-title">D. Fit Within Author’s Wider Practice</h2>
         <ul>
           <li>Smart Citizen is part of Fab Lab Barcelona's broader work in:
@@ -125,8 +140,9 @@
           </li>
           <li>Guillem Camprodon, one of the project leads, also contributes to writing and speaking about urban technology democratization, open source governance, and citizen empowerment through tools.</li>
         </ul>
-      </div>
-      <div class="analysis-card">
+      </article>
+
+      <article class="analysis-card">
         <h2 class="analysis-title">E. Personal Assessment (Appraisal + Criticism)</h2>
         <ul>
           <li><strong>Strengths:</strong>
@@ -152,9 +168,13 @@
           </li>
         </ul>
         <p>Critique: Smart Citizen walks the line between tool-making and advocacy. While its technical contributions are strong, it could further support policy translation—making sure the data gathered is legible to institutions and not just individuals.</p>
-      </div>
+      </article>
     </section>
   </main>
+
+  <!-- =========================
+       FOOTER
+       ========================= -->
   <footer class="site-footer">
     built by sara lin • 2025
   </footer>

@@ -1,3 +1,6 @@
+/* =========================
+   GLOBAL & BASE STYLES
+   ========================= */
 body {
   margin: 0;
   font-family: 'Inter', 'Arial', sans-serif;
@@ -8,6 +11,29 @@ body {
   font-weight: 400;
 }
 
+a {
+  color: #333;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #FFD700;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+ul li {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+/* =========================
+   HEADER & NAVIGATION
+   ========================= */
 .site-header {
   background: #fff;
   border-bottom: 2.5px solid #333;
@@ -47,6 +73,9 @@ body {
   border-bottom: 2px solid #FFD700;
 }
 
+/* =========================
+   HERO SECTION
+   ========================= */
 #hero {
   height: 90vh;
   display: flex;
@@ -97,6 +126,9 @@ body {
   border: 1.5px solid #FFD700;
 }
 
+/* =========================
+   SECTION & TYPOGRAPHY
+   ========================= */
 .content-section {
   padding: 5rem 8vw;
   background-color: #fff;
@@ -128,36 +160,47 @@ h2 {
   font-weight: 500;
 }
 
-ul {
-  list-style: disc;
-  padding-left: 1.5rem;
-}
-
-ul li {
-  margin-bottom: 0.75rem;
-  line-height: 1.6;
-}
-
-a {
-  color: #333;
-  text-decoration: underline;
-  transition: color 0.3s;
-}
-
-a:hover {
-  color: #FFD700;
-}
-
-.diagram-card {
+/* =========================
+   CARDS & DIAGRAMS
+   ========================= */
+.diagram-card, .intro-card, .analysis-card {
   background: #f8f8f8;
   border-radius: 14px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.07);
   padding: 2.5rem 2rem 2rem 2rem;
-  margin: 3.5rem auto 3.5rem auto;
   max-width: 1100px;
+  margin: 3.5rem auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.intro-card {
+  padding: 2.2rem 2rem 1.5rem 2rem;
+  margin: 0 auto 2.5rem auto;
+  text-align: left;
+}
+
+.intro-text {
+  font-size: 1.08rem;
+  color: #333;
+  margin-bottom: 1.2rem;
+  text-align: left;
+}
+
+.intro-list {
+  margin: 0 0 0 1.2rem;
+  color: #333;
+  font-size: 1rem;
+  padding-left: 1.2rem;
+}
+
+.analysis-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  max-width: 1100px;
+  margin: 2.5rem auto;
 }
 
 .main-diagram-img {
@@ -167,16 +210,17 @@ a:hover {
   margin: 0 auto 2.2rem auto;
 }
 
-.diagram-title {
-  font-size: 1.25rem;
-  text-transform: uppercase;
-  color: #333;
-  margin-top: 0;
-  margin-bottom: 2.2rem;
+.diagram-title,
+.analysis-title {
+  font-size: 1.15rem;
+  font-weight: 600;
   letter-spacing: 0.08em;
-  border-left: 5px solid #FFD700;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 1.2rem;
   padding-left: 0.7rem;
-  align-self: flex-start;
+  color: #333;
+  border-left: 5px solid #FFD700;
 }
 
 .diagram-caption {
@@ -188,47 +232,54 @@ a:hover {
   font-style: italic;
 }
 
-.analysis-cards {
-  display: flex;
-  flex-direction: column;
-  gap: 3.5rem;
-  max-width: 1100px;
-  margin: 2.5rem auto 2.5rem auto;
+.tech-image {
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  object-fit: cover;
+  background: #eee;
+  display: block;
+  margin: 0 auto;
 }
 
-.analysis-card {
-  background: #f8f8f8;
-  border-radius: 14px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
-  padding: 2.5rem 2rem 2rem 2rem;
-  display: flex;
-  flex-direction: column;
-}
-
-.analysis-card h3 {
-  font-size: 1.15rem;
-  text-transform: uppercase;
-  color: #333;
-  margin-top: 0;
-  margin-bottom: 1.2rem;
-  letter-spacing: 0.08em;
-  border-left: 5px solid #FFD700;
-  padding-left: 0.7rem;
-}
-
+/* =========================
+   PRECEDENT & ANALYSIS
+   ========================= */
 .precedent-analysis {
   margin: 3rem 0 2rem 0;
 }
 
-.precedent-title {
-  font-size: 2rem;
-  font-weight: 700;
+.precedent-title, .page-title {
+  font-size: 2.3rem;
+  font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: #333;
+  letter-spacing: 0.12em;
+  color: #222;
+  margin-bottom: 0.5rem;
+  padding-left: 0.7rem;
   border-left: 8px solid #FFD700;
-  padding-left: 1rem;
-  margin-bottom: 2.5rem;
+}
+
+.page-title-block {
+  text-align: left;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-subtitle {
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: #888;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+  padding-left: 0.7rem;
 }
 
 .precedent-columns {
@@ -251,7 +302,8 @@ a:hover {
   justify-content: flex-start;
 }
 
-.precedent-col h3 {
+.precedent-col h3,
+.precedent-section h3 {
   font-size: 1.15rem;
   text-transform: uppercase;
   color: #333;
@@ -302,17 +354,6 @@ a:hover {
   margin-bottom: 1.5rem;
 }
 
-.precedent-section h3 {
-  font-size: 1.1rem;
-  text-transform: uppercase;
-  color: #333;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  letter-spacing: 0.08em;
-  border-left: 5px solid #FFD700;
-  padding-left: 0.7rem;
-}
-
 .precedent-diagram pre {
   margin: 0 auto !important;
   display: block;
@@ -327,92 +368,9 @@ a:hover {
   overflow-x: auto;
 }
 
-.page-title-block {
-  text-align: left;
-  margin-top: 2.5rem;
-  margin-bottom: 1.5rem;
-  max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.page-title {
-  font-size: 2.3rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: #222;
-  margin-bottom: 0.5rem;
-  padding-left: 0.7rem;
-  border-left: 8px solid #FFD700;
-}
-
-.page-subtitle,
-.diagram-title,
-.analysis-title {
-  font-size: 1.15rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  color: #888;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 1.2rem;
-  padding-left: 0.7rem;
-}
-
-.diagram-title,
-.analysis-title {
-  color: #333;
-  border-left: 5px solid #FFD700;
-}
-
-.intro-card {
-  background: #f8f8f8;
-  border-radius: 14px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
-  padding: 2.2rem 2rem 1.5rem 2rem;
-  max-width: 1100px;
-  margin: 0 auto 2.5rem auto;
-  text-align: left;
-}
-
-.intro-text {
-  font-size: 1.08rem;
-  color: #333;
-  margin-bottom: 1.2rem;
-  text-align: left;
-}
-
-.intro-list {
-  margin: 0 0 0 1.2rem;
-  color: #333;
-  font-size: 1rem;
-  padding-left: 1.2rem;
-}
-
-.analysis-title {
-  font-size: 1.15rem;
-  text-transform: uppercase;
-  color: #333;
-  margin-top: 0;
-  margin-bottom: 1.2rem;
-  letter-spacing: 0.08em;
-  border-left: 5px solid #FFD700;
-  padding-left: 0.7rem;
-}
-
-.tech-image {
-  max-width: 180px;
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-  object-fit: cover;
-  background: #eee;
-  display: block;
-  margin: 0 auto;
-}
-
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
 @media (max-width: 900px) {
   .diagram-card, .analysis-cards {
     max-width: 100%;
