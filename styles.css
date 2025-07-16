@@ -161,8 +161,8 @@ a:hover {
 }
 
 .main-diagram-img {
-  max-width: 900px;
-  width: 100%;
+  max-width: 400px;
+  width: 40%;
   display: block;
   margin: 0 auto 1.2rem auto;
 }
@@ -333,6 +333,7 @@ a:hover {
   }
   .main-diagram-img {
     max-width: 100%;
+    width: 100%;
   }
   .analysis-card {
     padding: 1.2rem 0.5rem 1.2rem 0.5rem;
