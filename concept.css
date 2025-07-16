@@ -163,20 +163,12 @@ h2 {
 /* =========================
    CARDS & DIAGRAMS
    ========================= */
-.diagram-card, .intro-card, .analysis-card {
+.intro-card {
   background: #f8f8f8;
   border-radius: 14px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.07);
-  padding: 2.5rem 2rem 2rem 2rem;
-  max-width: 1100px;
-  margin: 3.5rem auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.intro-card {
   padding: 2.2rem 2rem 1.5rem 2rem;
+  max-width: 1100px;
   margin: 0 auto 2.5rem auto;
   text-align: left;
 }
@@ -195,6 +187,16 @@ h2 {
   padding-left: 1.2rem;
 }
 
+.analysis-card {
+  background: #f8f8f8;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+  padding: 2.5rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
 .analysis-cards {
   display: flex;
   flex-direction: column;
@@ -208,6 +210,19 @@ h2 {
   width: 40%;
   display: block;
   margin: 0 auto 2.2rem auto;
+}
+
+.diagram-card {
+  background: #f8f8f8;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+  padding: 2.5rem 2rem 2rem 2rem;
+  margin: 3.5rem auto;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
 }
 
 .diagram-title,
@@ -228,7 +243,7 @@ h2 {
   color: #888;
   margin-top: 0.5rem;
   margin-bottom: 2.2rem;
-  text-align: center;
+  text-align: left;
   font-style: italic;
 }
 
